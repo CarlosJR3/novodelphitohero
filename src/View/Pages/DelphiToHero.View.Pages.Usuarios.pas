@@ -24,8 +24,10 @@ uses
   FireDAC.Comp.Client, Vcl.Grids, Vcl.DBGrids;
 
 type
-  [ClassToBind('/users', 'id', 'Cadastro de Usuários')]
+  [FormRest('/users', 'quuid', 'name', 'asc')]
+  [FormDefault('Cadastro de Usuários')]
   TPageUsuarios = class(TFormTemplate)
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -38,5 +40,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TPageUsuarios.FormCreate(Sender: TObject);
+begin
+  inherited;
+  Label1.Caption :='Cadastro de Usuários';
+end;
 
 end.

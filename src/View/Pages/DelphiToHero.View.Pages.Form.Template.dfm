@@ -12,9 +12,7 @@ object FormTemplate: TFormTemplate
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 13
   object Panel1: TPanel
     Left = 0
@@ -25,10 +23,6 @@ object FormTemplate: TFormTemplate
     BevelOuter = bvNone
     ParentBackground = False
     TabOrder = 0
-    ExplicitLeft = 592
-    ExplicitTop = 264
-    ExplicitWidth = 185
-    ExplicitHeight = 41
     object Panel2: TPanel
       Left = 0
       Top = 0
@@ -49,7 +43,6 @@ object FormTemplate: TFormTemplate
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
-        ExplicitTop = -6
         object Label1: TLabel
           Left = 0
           Top = 0
@@ -137,10 +130,6 @@ object FormTemplate: TFormTemplate
       Padding.Right = 100
       ParentBackground = False
       TabOrder = 1
-      ExplicitLeft = 464
-      ExplicitTop = 352
-      ExplicitWidth = 185
-      ExplicitHeight = 41
       object Panel5: TPanel
         Left = 100
         Top = 0
@@ -150,10 +139,6 @@ object FormTemplate: TFormTemplate
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
-        ExplicitLeft = 400
-        ExplicitTop = 200
-        ExplicitWidth = 185
-        ExplicitHeight = 41
         object Panel6: TPanel
           Left = 0
           Top = 0
@@ -172,7 +157,6 @@ object FormTemplate: TFormTemplate
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
-            ExplicitTop = 87
           end
           object Panel8: TPanel
             Left = 0
@@ -182,7 +166,6 @@ object FormTemplate: TFormTemplate
             Align = alClient
             BevelOuter = bvNone
             TabOrder = 1
-            ExplicitTop = -6
             object SpeedButton4: TSpeedButton
               Left = 140
               Top = 0
@@ -241,7 +224,6 @@ object FormTemplate: TFormTemplate
                 Height = 13
                 Align = alTop
                 Caption = 'Pesquisar'
-                ExplicitTop = 0
                 ExplicitWidth = 46
               end
               object Edit1: TEdit
@@ -262,8 +244,6 @@ object FormTemplate: TFormTemplate
                 BevelOuter = bvNone
                 ParentBackground = False
                 TabOrder = 1
-                ExplicitTop = 69
-                ExplicitWidth = 394
               end
             end
           end
@@ -278,7 +258,6 @@ object FormTemplate: TFormTemplate
           Padding.Bottom = 35
           ParentBackground = False
           TabOrder = 1
-          ExplicitTop = 118
           object Panel12: TPanel
             Left = 374
             Top = 0
@@ -288,8 +267,6 @@ object FormTemplate: TFormTemplate
             BevelOuter = bvNone
             ParentBackground = False
             TabOrder = 0
-            ExplicitLeft = 380
-            ExplicitTop = 5
           end
           object DBGrid1: TDBGrid
             Left = 0
@@ -1394,7 +1371,7 @@ object FormTemplate: TFormTemplate
     Left = 674
     Top = 250
     Content = {
-      414442530F000000C42B0000FF00010001FF02FF03040016000000460044004D
+      4144425310000000C42B0000FF00010001FF02FF03040016000000460044004D
       0065006D005400610062006C0065003100050000000000060000070032000000
       080000FF09FF0A04000C00000043007500730074004E006F000B00010000000D
       000C000E00010F000110000111000112000113000114000C0000004300750073
