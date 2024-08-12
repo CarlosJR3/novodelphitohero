@@ -35,7 +35,12 @@ uses
 
 type
   TFormTemplate = class(TForm, iRouter4DComponent)
-    Panel1: TPanel;
+
+  // Panel1.Color := COLOR_BACKGROUND;//
+  [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME, tecell0]
+    pnlPrincipal: TPanel;
+
+
     Panel2: TPanel;
     Panel3: TPanel;
     Panel4: TPanel;
@@ -90,7 +95,7 @@ begin
   Label1.Caption := FTitle;
   Panel12.Visible := False;
 
-  Panel1.Color := COLOR_BACKGROUND;
+
   Panel2.Color := COLOR_C1;
   Panel3.Color := COLOR_BACKGROUND;
   Panel4.Color := COLOR_C1;

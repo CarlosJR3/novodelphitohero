@@ -14,7 +14,7 @@ object FormTemplate: TFormTemplate
   Font.Style = []
   OnCreate = FormCreate
   TextHeight = 13
-  object Panel1: TPanel
+  object pnlPrincipal: TPanel
     Left = 0
     Top = 0
     Width = 994
