@@ -31,36 +31,68 @@ uses
     FireDAC.Comp.Client,
     Vcl.Grids,
     Vcl.DBGrids,
-    Bind4D;
+    Bind4D,
+    DelphiToHero.View.Styles.Colors;
 
 type
   TFormTemplate = class(TForm, iRouter4DComponent)
 
-  // Panel1.Color := COLOR_BACKGROUND;//
-  [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME, tecell0]
+
+ [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
     pnlPrincipal: TPanel;
 
 
-    Panel2: TPanel;
-    Panel3: TPanel;
+   [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
+   PnlTOP: TPanel;
+
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     PnlMAIN: TPanel;
+
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    PnlMainbody: TPanel;
+
+
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    PnlMainbodyDelta: TPanel;
+
+
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     PnlMainbodyTop: TPanel;
+
+
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     PnlMainbodyDeltaForm: TPanel;
+
+    [ComponentBindStyle(COLOR_C2, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     PnlMainbodyTopline: TPanel;
+
+
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+      PnlMainbodyTopPesquisa: TPanel;
+
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+      PnlMainbodyTopmenu: TPanel;
+
+
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+   PnlMainTopBodySearchLine: TPanel;
+
+
+
     Panel4: TPanel;
     Label1: TLabel;
     SpeedButton1: TSpeedButton;
     ImageList1: TImageList;
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
-    Panel5: TPanel;
-    Panel6: TPanel;
-    Panel7: TPanel;
-    Panel8: TPanel;
+
     SpeedButton4: TSpeedButton;
     SpeedButton5: TSpeedButton;
-    Panel9: TPanel;
+
     Label2: TLabel;
     Edit1: TEdit;
-    Panel10: TPanel;
-    Panel11: TPanel;
-    Panel12: TPanel;
+
+
     DBGrid1: TDBGrid;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
@@ -83,8 +115,6 @@ var
 
 implementation
 
-uses
-  DelphiToHero.View.Styles.Colors;
 
 {$R *.dfm}
 
@@ -93,20 +123,20 @@ uses
 procedure TFormTemplate.ApplyStyle;
 begin
   Label1.Caption := FTitle;
-  Panel12.Visible := False;
+  PnlMainbodyDeltaForm.Visible := False;
 
 
-  Panel2.Color := COLOR_C1;
-  Panel3.Color := COLOR_BACKGROUND;
+
+
   Panel4.Color := COLOR_C1;
-  Panel5.Color := COLOR_BACKGROUND;
-  Panel6.Color := COLOR_BACKGROUND;
 
-  Panel7.Color := COLOR_C2;
-  Panel9.Color := COLOR_BACKGROUND;
-  Panel10.Color := COLOR_BACKGROUND_TOP;
-  Panel11.Color := COLOR_BACKGROUND;
-  Panel12.Color := COLOR_BACKGROUND;
+
+
+
+
+
+
+
 
   Label1.Font.Size := FONT_H5;
   Label1.Font.Color := FONT_COLOR3;

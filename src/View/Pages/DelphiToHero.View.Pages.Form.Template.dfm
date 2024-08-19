@@ -23,7 +23,7 @@ object FormTemplate: TFormTemplate
     BevelOuter = bvNone
     ParentBackground = False
     TabOrder = 0
-    object Panel2: TPanel
+    object PnlTOP: TPanel
       Left = 0
       Top = 0
       Width = 994
@@ -119,7 +119,7 @@ object FormTemplate: TFormTemplate
         end
       end
     end
-    object Panel3: TPanel
+    object PnlMAIN: TPanel
       Left = 0
       Top = 113
       Width = 994
@@ -130,7 +130,7 @@ object FormTemplate: TFormTemplate
       Padding.Right = 100
       ParentBackground = False
       TabOrder = 1
-      object Panel5: TPanel
+      object PnlMainbody: TPanel
         Left = 100
         Top = 0
         Width = 794
@@ -139,7 +139,7 @@ object FormTemplate: TFormTemplate
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
-        object Panel6: TPanel
+        object PnlMainbodyTop: TPanel
           Left = 0
           Top = 0
           Width = 794
@@ -148,7 +148,7 @@ object FormTemplate: TFormTemplate
           BevelOuter = bvNone
           ParentBackground = False
           TabOrder = 0
-          object Panel7: TPanel
+          object PnlMainbodyTopline: TPanel
             Left = 0
             Top = 112
             Width = 794
@@ -158,7 +158,7 @@ object FormTemplate: TFormTemplate
             ParentBackground = False
             TabOrder = 0
           end
-          object Panel8: TPanel
+          object PnlMainbodyTopmenu: TPanel
             Left = 0
             Top = 0
             Width = 794
@@ -207,7 +207,7 @@ object FormTemplate: TFormTemplate
               ExplicitLeft = 8
               ExplicitHeight = 88
             end
-            object Panel9: TPanel
+            object PnlMainbodyTopPesquisa: TPanel
               Left = 320
               Top = 0
               Width = 474
@@ -235,7 +235,7 @@ object FormTemplate: TFormTemplate
                 BorderStyle = bsNone
                 TabOrder = 0
               end
-              object Panel10: TPanel
+              object PnlMainTopBodySearchLine: TPanel
                 Left = 0
                 Top = 73
                 Width = 474
@@ -248,7 +248,7 @@ object FormTemplate: TFormTemplate
             end
           end
         end
-        object Panel11: TPanel
+        object PnlMainbodyDelta: TPanel
           Left = 0
           Top = 113
           Width = 794
@@ -258,7 +258,7 @@ object FormTemplate: TFormTemplate
           Padding.Bottom = 35
           ParentBackground = False
           TabOrder = 1
-          object Panel12: TPanel
+          object PnlMainbodyDeltaForm: TPanel
             Left = 374
             Top = 0
             Width = 420
