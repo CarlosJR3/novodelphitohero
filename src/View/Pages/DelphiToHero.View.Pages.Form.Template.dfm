@@ -34,7 +34,7 @@ object FormTemplate: TFormTemplate
       Padding.Right = 100
       ParentBackground = False
       TabOrder = 0
-      object Panel4: TPanel
+      object PnlTopBody: TPanel
         Left = 100
         Top = 0
         Width = 794
@@ -43,13 +43,13 @@ object FormTemplate: TFormTemplate
         BevelOuter = bvNone
         ParentBackground = False
         TabOrder = 0
-        object Label1: TLabel
+        object lblTitle: TLabel
           Left = 0
           Top = 0
-          Width = 37
+          Width = 38
           Height = 113
           Align = alLeft
-          Caption = 'Label1'
+          Caption = 'lblTitle'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11

@@ -44,7 +44,7 @@ implementation
 procedure TPageUsuarios.FormCreate(Sender: TObject);
 begin
   inherited;
-  Label1.Caption :='Cadastro de Usuários';
+  lblTitle.Caption :='Cadastro de Usuários';
 end;
 
 end.

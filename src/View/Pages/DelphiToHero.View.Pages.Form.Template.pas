@@ -78,21 +78,21 @@ type
    PnlMainTopBodySearchLine: TPanel;
 
 
+    [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    PnlTopBody: TPanel;
 
-    Panel4: TPanel;
-    Label1: TLabel;
+     [ComponentBindStyle(clBtnFace, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     lblTitle: TLabel;
+
+
     SpeedButton1: TSpeedButton;
     ImageList1: TImageList;
     SpeedButton2: TSpeedButton;
     SpeedButton3: TSpeedButton;
-
     SpeedButton4: TSpeedButton;
     SpeedButton5: TSpeedButton;
-
     Label2: TLabel;
     Edit1: TEdit;
-
-
     DBGrid1: TDBGrid;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
@@ -122,33 +122,15 @@ implementation
 
 procedure TFormTemplate.ApplyStyle;
 begin
-  Label1.Caption := FTitle;
+  lblTitle.Caption := FTitle;
   PnlMainbodyDeltaForm.Visible := False;
 
 
-
-
-  Panel4.Color := COLOR_C1;
-
-
-
-
-
-
-
-
-
-  Label1.Font.Size := FONT_H5;
-  Label1.Font.Color := FONT_COLOR3;
-  Label1.Font.Name := 'Segoe UI';
-
   Label2.Font.Size := FONT_H6;
   Label2.Font.Color := COLOR_BACKGROUND_TOP;
-
   Edit1.Font.Size := FONT_H5;
   Edit1.Font.Color := COLOR_BACKGROUND_TOP;
   Edit1.Color := COLOR_BACKGROUND;
-
   DBGrid1.Font.Size := FONT_H5;
   DBGrid1.Font.Color := FONT_COLOR4;
   DBGrid1.Font.Name := 'Segoe UI';
