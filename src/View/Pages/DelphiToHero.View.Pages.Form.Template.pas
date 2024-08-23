@@ -38,7 +38,7 @@ type
   TFormTemplate = class(TForm, iRouter4DComponent)
 
 
- [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
     pnlPrincipal: TPanel;
 
 
@@ -46,36 +46,36 @@ type
    PnlTOP: TPanel;
 
    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-     PnlMAIN: TPanel;
+   PnlMAIN: TPanel;
 
    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-    PnlMainbody: TPanel;
+   PnlMainbody: TPanel;
 
 
    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-    PnlMainbodyDelta: TPanel;
+   PnlMainbodyDelta: TPanel;
 
 
     [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-     PnlMainbodyTop: TPanel;
+    PnlMainbodyTop: TPanel;
 
 
     [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-     PnlMainbodyDeltaForm: TPanel;
+    PnlMainbodyDeltaForm: TPanel;
 
     [ComponentBindStyle(COLOR_C2, FONT_H5, FONT_COLOR3, FONT_NAME)]
-     PnlMainbodyTopline: TPanel;
+    PnlMainbodyTopline: TPanel;
 
 
     [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-      PnlMainbodyTopPesquisa: TPanel;
+    PnlMainbodyTopPesquisa: TPanel;
 
-   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-      PnlMainbodyTopmenu: TPanel;
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    PnlMainbodyTopmenu: TPanel;
 
 
-   [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
-   PnlMainTopBodySearchLine: TPanel;
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    PnlMainTopBodySearchLine: TPanel;
 
 
     [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
