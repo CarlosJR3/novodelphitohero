@@ -81,12 +81,12 @@ type
     [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
     PnlTopBody: TPanel;
 
-     [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     [ComponentBindStyle(clBtnFace, FONT_H2, FONT_COLOR3, FONT_NAME)]
      lblTitle: TLabel;
 
 
 
-   [ComponentBindStyle(COLOR_C1, FONT_H6, COLOR_BACKGROUND_TOP, FONT_NAME)]
+   [ComponentBindStyle(clBtnFace, FONT_H6, COLOR_BACKGROUND_TOP, FONT_NAME)]
     lblSearch: TLabel;
 
 

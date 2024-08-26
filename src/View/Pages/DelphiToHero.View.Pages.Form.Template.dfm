@@ -58,6 +58,7 @@ object FormTemplate: TFormTemplate
           Font.Style = [fsBold]
           ParentColor = False
           ParentFont = False
+          Transparent = True
           Layout = tlCenter
           ExplicitTop = -6
         end
@@ -227,7 +228,7 @@ object FormTemplate: TFormTemplate
                 Align = alTop
                 Caption = 'Pesquisar'
                 OnClick = FormCreate
-                ExplicitWidth = 46
+                ExplicitTop = 29
               end
               object EditSearch: TEdit
                 Left = 0

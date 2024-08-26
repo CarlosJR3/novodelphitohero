@@ -24,7 +24,7 @@ uses
   FireDAC.Comp.Client, Vcl.Grids, Vcl.DBGrids;
 
 type
-  [FormRest('/users', 'quuid', 'name', 'asc ')]
+ [FormRest('/users', 'quuid', 'name', 'asc ')]
   [FormDefault('Cadastro de Usuários')]
 
   TPageUsuarios = class(TFormTemplate)
@@ -45,8 +45,7 @@ implementation
 procedure TPageUsuarios.FormCreate(Sender: TObject);
 begin
   inherited;
-  LblTitle .caption := 'Cadastro de Usuário';
-
+       lblTitle.Caption := 'Cadastro de Usuários';
 end;
 
 end.
