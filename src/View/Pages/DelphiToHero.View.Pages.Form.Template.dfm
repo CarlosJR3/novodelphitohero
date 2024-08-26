@@ -50,14 +50,16 @@ object FormTemplate: TFormTemplate
           Height = 113
           Align = alLeft
           Caption = 'lblTitle'
+          Color = clBtnFace
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
           Font.Height = -11
           Font.Name = 'Tahoma'
           Font.Style = [fsBold]
+          ParentColor = False
           ParentFont = False
           Layout = tlCenter
-          ExplicitHeight = 13
+          ExplicitTop = -6
         end
         object SpeedButton1: TSpeedButton
           Left = 654
@@ -217,16 +219,17 @@ object FormTemplate: TFormTemplate
               Padding.Top = 35
               ParentBackground = False
               TabOrder = 0
-              object Label2: TLabel
+              object lblSearch: TLabel
                 Left = 0
                 Top = 35
                 Width = 474
                 Height = 13
                 Align = alTop
                 Caption = 'Pesquisar'
+                OnClick = FormCreate
                 ExplicitWidth = 46
               end
-              object Edit1: TEdit
+              object EditSearch: TEdit
                 Left = 0
                 Top = 48
                 Width = 474

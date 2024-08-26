@@ -74,16 +74,24 @@ type
     PnlMainbodyTopmenu: TPanel;
 
 
-    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, FONT_COLOR3, FONT_NAME)]
+    [ComponentBindStyle(COLOR_BACKGROUND_TOP, FONT_H5, FONT_COLOR3, FONT_NAME)]
     PnlMainTopBodySearchLine: TPanel;
 
 
     [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
     PnlTopBody: TPanel;
 
-     [ComponentBindStyle(clBtnFace, FONT_H5, FONT_COLOR3, FONT_NAME)]
+     [ComponentBindStyle(COLOR_C1, FONT_H5, FONT_COLOR3, FONT_NAME)]
      lblTitle: TLabel;
 
+
+
+   [ComponentBindStyle(COLOR_C1, FONT_H6, COLOR_BACKGROUND_TOP, FONT_NAME)]
+    lblSearch: TLabel;
+
+
+    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, COLOR_BACKGROUND_TOP, FONT_NAME)]
+      EditSearch: TEdit;
 
     SpeedButton1: TSpeedButton;
     ImageList1: TImageList;
@@ -91,8 +99,7 @@ type
     SpeedButton3: TSpeedButton;
     SpeedButton4: TSpeedButton;
     SpeedButton5: TSpeedButton;
-    Label2: TLabel;
-    Edit1: TEdit;
+
     DBGrid1: TDBGrid;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
@@ -126,11 +133,10 @@ begin
   PnlMainbodyDeltaForm.Visible := False;
 
 
-  Label2.Font.Size := FONT_H6;
-  Label2.Font.Color := COLOR_BACKGROUND_TOP;
-  Edit1.Font.Size := FONT_H5;
-  Edit1.Font.Color := COLOR_BACKGROUND_TOP;
-  Edit1.Color := COLOR_BACKGROUND;
+
+
+
+
   DBGrid1.Font.Size := FONT_H5;
   DBGrid1.Font.Color := FONT_COLOR4;
   DBGrid1.Font.Name := 'Segoe UI';
