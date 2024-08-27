@@ -60,7 +60,7 @@ object FormTemplate: TFormTemplate
           ParentFont = False
           Transparent = True
           Layout = tlCenter
-          ExplicitTop = -6
+          ExplicitHeight = 13
         end
         object SpeedButton1: TSpeedButton
           Left = 654
@@ -226,9 +226,9 @@ object FormTemplate: TFormTemplate
                 Width = 474
                 Height = 13
                 Align = alTop
-                Caption = 'Pesquisar'
+                Caption = 'Pesquisar:'
                 OnClick = FormCreate
-                ExplicitTop = 29
+                ExplicitWidth = 50
               end
               object EditSearch: TEdit
                 Left = 0

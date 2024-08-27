@@ -87,20 +87,33 @@ type
 
 
    [ComponentBindStyle(clBtnFace, FONT_H6, COLOR_BACKGROUND_TOP, FONT_NAME)]
-    lblSearch: TLabel;
+      lblSearch: TLabel;
 
 
-    [ComponentBindStyle(COLOR_BACKGROUND, FONT_H5, COLOR_BACKGROUND_TOP, FONT_NAME)]
-      EditSearch: TEdit;
+    [conentBindStyle(COLOR_BACKGROUND, FONT_H5, COLOR_BACKGROUND_TOP, FONT_NAME)]
+        EditSearch: TEdit;
 
+    [conentBindStyle(COLOR_BACKGROUND, FONT_H5, Font_color4, FONT_NAME)]
+    DBGrid1: TDBGrid;
+
+    [ComponentBindStyle(clBtnFace, FONT_H7, FONT_COLOR3, FONT_NAME)]
     SpeedButton1: TSpeedButton;
-    ImageList1: TImageList;
+
+
+
+    [ComponentBindStyle(clBtnFace, FONT_H7, FONT_COLOR3, FONT_NAME)]
     SpeedButton2: TSpeedButton;
+
+    [ComponentBindStyle(clBtnFace, FONT_H7, FONT_COLOR3, FONT_NAME)]
     SpeedButton3: TSpeedButton;
+
+    [ComponentBindStyle(clBtnFace, FONT_H7, FONT_COLOR3, FONT_NAME)]
     SpeedButton4: TSpeedButton;
+
+    [ComponentBindStyle(clBtnFace, FONT_H7, FONT_COLOR3, FONT_NAME)]
     SpeedButton5: TSpeedButton;
 
-    DBGrid1: TDBGrid;
+    ImageList1: TImageList;
     FDMemTable1: TFDMemTable;
     DataSource1: TDataSource;
     procedure FormCreate(Sender: TObject);
@@ -133,13 +146,25 @@ begin
   PnlMainbodyDeltaForm.Visible := False;
 
 
+   lblTitle.Font.Size :=FONT_H5;
+   LblTitle.Font.Color :=FONT_COLOR3;
+   lblTitle.Font.Name :='segoe UI';
+
+
+
+       lblSearch.Font.Size := FONT_H6;
+       lblSearch.Font.Color := FONT_COLOR3;
+       LblSearch.Font.Name := 'segoe UI';
+
+
+
+         EditSearch.Font.Size := FONT_H5;
+         EditSearch.Font.Color :=  COLOR_BACKGROUND_TOP;
+         EditSearch.Color := COLOR_BACKGROUND;
 
 
 
 
-  DBGrid1.Font.Size := FONT_H5;
-  DBGrid1.Font.Color := FONT_COLOR4;
-  DBGrid1.Font.Name := 'Segoe UI';
   DBGrid1.TitleFont.Size := FONT_H5;
   DBGrid1.TitleFont.Name := 'Segoe UI';
   DBGrid1.TitleFont.Color := FONT_COLOR4;
@@ -153,6 +178,8 @@ begin
       .BindFormDefault(Ftitle)
       .BindFormRest(FEndPoint, FPK, FSort, FOrder)
       .SetStyleComponents;
+
+
        ApplyStyle;
 end;
 
