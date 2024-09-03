@@ -191,8 +191,8 @@ begin
     TRequest
     .New
     .BaseURL('http://localhost:9000' + FEndPoint )
-     .Accept('application/json')
-
+    .Accept('application/json')
+    .DataSetAdapter(FDMenTablel)
     .Get;
 end;
 
