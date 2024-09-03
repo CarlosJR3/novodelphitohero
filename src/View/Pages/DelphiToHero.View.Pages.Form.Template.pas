@@ -32,7 +32,8 @@ uses
     Vcl.Grids,
     Vcl.DBGrids,
     Bind4D,
-    DelphiToHero.View.Styles.Colors;
+    DelphiToHero.View.Styles.Colors,
+    RESTRequest4D;
 
 type
   TFormTemplate = class(TForm, iRouter4DComponent)
@@ -124,6 +125,7 @@ type
     FTitle : String;
      FSort, FOrder : String;
     procedure ApplyStyle;
+    procedure GetEndPoint;
   public
     { Public declarations }
     function Render : TForm;
@@ -181,10 +183,22 @@ begin
 
 
        ApplyStyle;
+       GetEndPoint;
+end;
+
+procedure TFormTemplate.GetEndPoint;
+begin
+    TRequest
+    .New
+    .BaseURL('http://localhost:9000' + FEndPoint )
+     .Accept('application/json')
+
+    .Get;
 end;
 
 function TFormTemplate.Render: TForm;
 begin
+
   Result := Self;
 end;
 

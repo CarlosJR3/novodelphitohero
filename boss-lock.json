@@ -13,10 +13,10 @@
 		"github.com/viniciussanchez/restrequest4delphi": {
 			"name": "restrequest4delphi",
 			"version": "v3.1.0",
-			"hash": "069c7aa4eca1494f0b657911c10b5c0c",
+			"hash": "ecbfecd20e827fe2b375197688ed4611",
 			"artifacts": {},
 			"failed": false,
-			"changed": false
+			"changed": true
 		},
 		"https://github.com/bittencourtthulio/aws4d": {
 			"name": "aws4d",
@@ -85,7 +85,7 @@
 		"https://github.com/viniciussanchez/restrequest4delphi": {
 			"name": "restrequest4delphi",
 			"version": "v3.1.0",
-			"hash": "069c7aa4eca1494f0b657911c10b5c0c",
+			"hash": "ecbfecd20e827fe2b375197688ed4611",
 			"artifacts": {},
 			"failed": false,
 			"changed": false
